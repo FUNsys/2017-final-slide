@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>FUNSys</title>
+	<title>FUNsys</title>
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
@@ -56,16 +56,16 @@
 				<h1>未来大生開発者を
 					<br> 支援するAPIと
 					<br> サンプルアプリの
-					<br>制作</h1>
-				<p>FUNSysチーム</p>
+					<br>開発</h1>
+				<p>FUNsysチーム</p>
 			</section>
 			<section>
-				<h2 style="text-transform:none">FUNSysチームについて</h2>
+				<h2 style="text-transform:none">FUNsysチームについて</h2>
 				<ui>
 					<li>発足：2017年4月</li>
-					<li>目的：未来大学内のデータ使用したいと
-						<br>思っている未来大生を支援する</li>
-					<!-- ポスターとの揺れ -->
+					<li>特徴：開発経験が少ない1・2年生が
+						<br>　　　過半数を占めている
+					</li>
 				</ui>
 			</section>
 			<section>
@@ -73,16 +73,17 @@
 					<h2>背景</h2>
 					<ui>
 						<li>未来大学は情報系の大学
-							<br> → アプリ開発をしている学生が一定数存在</li>
+							<br> → アプリ開発をしている学生が存在する</li>
 						<li>未来大のデータを扱ってアプリ開発をしたいというニーズが存在する</li>
 					</ui>
 				</section>
 				<section>
 					<h3>現状</h3>
 					<ui>
-						<li>未来大のデータ（時間割やシラバス等）の
-							<br>情報を入手するには、PDFやHTMLを解析する
-							<br>等の方法しかない
+						<li>未来大のデータ（時間割やシラバス等）を
+							<br>入手するには、
+							<b>PDFやHTMLを解析する</b>等の方法
+							<br>しかない
 						</li>
 					</ui>
 				</section>
@@ -94,75 +95,27 @@
 						<br>アクセサビリティを向上させる</li>
 					<li>自発的にアプリ開発を行う、
 						<br>未来大生開発者向けのサポートを行う</li>
+					<li>既存のデータを組み合わせて新しい価値を創造する</li>
 				</ui>
 			</section>
 			<section>
-				<section>
-					<h2>FUN-API</h2>
-					<ui>
-						<li>未来大のデータを提供するWeb API</li>
-						<li>現在は
-							<b>時間割・教員情報・教室情報</b>を提供</li>
-						<li>アクセスには学内のメールアドレスで
-							<br>認証する必要がある</li>
-					</ui>
-				</section>
-				<section>
-					<h3>具体例</h3>
-					<p>実際のFUN-APIのレスポンス</p>
-					<p>JSON形式で時間割情報を取得する事が出来る</p>
-					<!-- データを箇条書きで -->
-					<ul>
-						<li>教科名</li>
-						<li>必修情報</li>
-						<li>曜日</li>
-						<li>時限</li>
-						<li>担当教員</li>
-						<li>教室</li>
-						<li>対象クラス</li>
-					</ul>
-					<!--
-					<pre><code data-trim data-noescape>
-						"lecture_id": 1,
-						"disp_lecture": "線形代数学Ⅱ", // 教科名
-						"must": { // 必修情報
-							  'ict': '0', 
-							　'system': '0',
-							　'design': '0', 
-							　'complex': '0', 
-							　'intelligent':'0', 
-							　'unssign': '2'
-						}, 
-						"week": 1, // 曜日
-						"jigen": 1, // 時間
-						"teachers": [ 69 ], // 担当教員
-						"rooms": [ 11 ],  // 教室
-						"classes": [ 101, 102, 103, 104 ]  // 対象クラス
-					</code></pre>
-				-->
-					<!-- コードの見せ方に工夫 -->
-				</section>
+				<h2>FUN-API</h2>
+				<ui>
+					<li>未来大のデータを提供するWeb API</li>
+					<li>現在は
+						<b>時間割・教員情報・教室情報</b>を提供</li>
+					<li>JSON形式で取得する事が出来る</li>
+				</ui>
 			</section>
 			<section>
 				<h2>サンプルアプリ</h2>
 				<ui>
 					<li>FUN-APIを使った、未来大生の為の
 						<br>時間割アプリ</li>
-					<li>講義情報を、時間や教室、教員等の情報から
-						<br>検索出来る</li>
 					<li>
 						<b>空き教室情報の確認や
 							<br>教員の講義情報の確認</b>が出来る
 					</li>
-					<!-- イマイチ伝わらない……？ -->
-				</ui>
-			</section>
-			<section>
-				<h2>今後の課題</h2>
-				<ui>
-					<li>FUN-APIで提供するデータを増やす</li>
-					<li>可能な限りデータの収集を自動化する</li>
-					<!--<li>休講補講等の、リアルタイムなデータを配信する事に注力する</li>-->
 				</ui>
 			</section>
 		</div>
